@@ -1,0 +1,13 @@
+body {
+    margin:0;
+}
+
+.pattern-container {
+    max-width: 1538px;
+    max-height: 874px;
+    padding: 16px;
+    margin: 16px auto;
+    background-color: white;
+    border: 1px solid black;
+    position: relative;
+}
