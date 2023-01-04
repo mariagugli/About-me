@@ -1,13 +1,167 @@
 body {
     margin:0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-family: 'inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'unbounded', cursive;
+    font-weight: 300;
+}
+
+h1,
+h2 {
+    font-size: 32px;
+}
+
+h3,
+h4 {
+    font-size: 20px;
+}
+
+h1::before, 
+h2::before {
+    content:'['
+}
+
+h1::after, 
+h2::after {
+    content:']'
 }
 
 .pattern-container {
     max-width: 1538px;
     max-height: 874px;
-    padding: 16px;
     margin: 16px auto;
     background-color: white;
     border: 1px solid black;
     position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.pattern-section {
+    position: relative;
+}
+
+.section-info,
+.section-work {
+    border-right: 1px solid black;
+}
+
+.pattern-article {
+    border-bottom: 1px solid black;
+    padding: 16px;
+    position:relative;
+}
+
+.article-basic-info {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+[data-header] {
+    font-size: 12px;
+}
+
+[data-header]::before {
+    content: attr(data-header) ": ";
+}
+
+[data-header]::after {
+    content:'';
+}
+
+.introduction {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction:nth-child(1) {
+    font-family: 'unbounded', cursive;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.flower {
+    padding-bottom: 10px;
+}
+
+
+
+/* Toggle para cambiar a modo oscuro */
+.toggle-wrapper {
+    width: 80px;
+    height: 40px;
+	background: gainsboro;
+    position: relative;
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+	border-radius: 50px;
+    box-shadow: inset 0px 2px 7px rgba(0, 0, 0, 0.2), inset 0px -2px 7px rgba(255, 255, 255, 0.2);
+	margin: 0px;
+	transition: all 0.3s ease;
+	transform-origin: 20% center;
+	
+}
+
+.darkmode-toggle {
+    appearance: none;
+    height: 35px;
+    width: 35px;
+    opacity: 100;
+    background: linear-gradient(180deg, #ffcc89, #d8860b);
+    border-radius: 100px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+} 
+
+.darkmode-toggle:checked{
+    background: linear-gradient(180deg, #777, #3a3a3a);
+    position: absolute;
+    right:0px;
+}
+
+.darkmode-toggle-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.sun {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 11px;
+}
+
+.moon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 9px;
 }
