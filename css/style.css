@@ -21,22 +21,12 @@ h4 {
 
 h1,
 h2 {
-    font-size: 32px;
+    font-size: 26px;
 }
 
 h3,
 h4 {
     font-size: 20px;
-}
-
-h1::before, 
-h2::before {
-    content:'['
-}
-
-h1::after, 
-h2::after {
-    content:']'
 }
 
 .pattern-container {
@@ -54,6 +44,17 @@ h2::after {
 
 .pattern-section {
     position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-work {
+    flex: 1;
+}
+
+.section-info,
+.section-moreInfo-and-Contact {
+    flex: 0 0 20%;
 }
 
 .section-info,
@@ -63,35 +64,72 @@ h2::after {
 
 .pattern-article {
     border-bottom: 1px solid black;
-    padding: 16px;
+    padding: 15px;
     position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .article-basic-info {
     position: relative;
     display: flex;
+    flex: 0 0 5%;
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
 }
 
-[data-header] {
-    font-size: 12px;
+.article-name {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: flex-start;
+    width: 378px;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+
 }
 
-[data-header]::before {
-    content: attr(data-header) ": ";
+.article-cv {
+    display: flex;
+    flex: 0 0 3%;
+    padding: 30px;
 }
 
-[data-header]::after {
-    content:'';
+.article-socials {
+    display: flex;
+    flex: 0 0 3%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
 }
+
+.article-intro {
+    padding: 0px;
+    padding-bottom: 22.5px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+}
+
+/* divs dentro de cada article */
 
 .introduction {
-    justify-content: center;
-    align-items: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    scroll-snap-align: center;
+    flex: 0 0 100%;
+    width: 100%;
+    object-fit: cover;
+    
 }
 
 .introduction:nth-child(1) {
@@ -102,9 +140,62 @@ h2::after {
 
 }
 
+.about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    scroll-snap-align: center;
+    flex: 0 0 80%;
+    margin: 30px;
+    padding: 16px;
+    object-fit: cover;
+}
+
+.intro-about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 11px;
+}
+
+[data-header] {
+    font-size: 12px;
+}
+
+[data-header]::before {
+    content: attr(data-header) ": ";
+}
+
+.pattern-title {
+    font-family: 'unbounded', cursive;
+    font-weight: 300;
+    font-size: 26px;
+}
+
+.pattern-title::before {
+    content: '['
+}
+
+.pattern-title::after {
+    content: ']'
+}
+
+a:visited {
+    color: rgba(211, 212, 247, 1);
+
+}
+
+
 .flower {
     padding-bottom: 10px;
 }
+
+
+
+
 
 
 
