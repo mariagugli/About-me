@@ -9,6 +9,7 @@ body {
     font-family: 'inter', sans-serif;
     font-weight: 400;
     font-size: 14px;
+
 }
 
 h1,
@@ -29,179 +30,10 @@ h4 {
     font-size: 20px;
 }
 
-.pattern-container {
-    max-width: 1538px;
-    max-height: 874px;
-    margin: 16px auto;
-    background-color: white;
-    border: 1px solid black;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-}
-
-.pattern-section {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-
-.section-work {
-    flex: 1;
-}
-
-.section-info,
-.section-moreInfo-and-Contact {
-    flex: 0 0 20%;
-}
-
-.section-info,
-.section-work {
-    border-right: 1px solid black;
-}
-
-.pattern-article {
-    border-bottom: 1px solid black;
-    padding: 15px;
-    position:relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.article-basic-info {
-    position: relative;
-    display: flex;
-    flex: 0 0 5%;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-between;
-}
-
-.article-name {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    flex: 1;
-    justify-content: flex-start;
-    width: 378px;
-    overflow: auto;
-    scroll-snap-type: x mandatory;
-
-}
-
-.article-cv {
-    display: flex;
-    flex: 0 0 3%;
-    padding: 30px;
-}
-
-.article-socials {
-    display: flex;
-    flex: 0 0 3%;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    border: none;
-}
-
-.article-intro {
-    padding: 0px;
-    padding-bottom: 22.5px;
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    align-items: center;
-}
-
-/* divs dentro de cada article */
-
-.introduction {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    scroll-snap-align: center;
-    flex: 0 0 100%;
-    width: 100%;
-    object-fit: cover;
-    
-}
-
-.introduction:nth-child(1) {
-    font-family: 'unbounded', cursive;
-    font-weight: 300;
-    font-size: 14px;
-    text-align: center;
-
-}
-
-.about-me {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    position: relative;
-    scroll-snap-align: center;
-    flex: 0 0 80%;
-    margin: 30px;
-    padding: 16px;
-    object-fit: cover;
-}
-
-.intro-about-me {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    padding: 0px;
-    gap: 11px;
-}
-
-[data-header] {
-    font-size: 12px;
-}
-
-[data-header]::before {
-    content: attr(data-header) ": ";
-}
-
-.pattern-title {
-    font-family: 'unbounded', cursive;
-    font-weight: 300;
-    font-size: 26px;
-}
-
-.pattern-title::before {
-    content: '['
-}
-
-.pattern-title::after {
-    content: ']'
-}
-
-a:visited {
-    color: rgba(211, 212, 247, 1);
-
-}
-
-
-.flower {
-    padding-bottom: 10px;
-}
-
-
-
-
-
-
 
 /* Toggle para cambiar a modo oscuro */
 .toggle-wrapper {
-    width: 80px;
+    width: 90px;
     height: 40px;
 	background: gainsboro;
     position: relative;
@@ -236,6 +68,7 @@ a:visited {
     right:0px;
 }
 
+
 .darkmode-toggle-item {
     display: flex;
     flex-direction: row;
@@ -255,4 +88,328 @@ a:visited {
     height: 20px;
     position: absolute;
     right: 9px;
+}
+
+
+
+/* divs dentro de cada article */
+
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+    flex: 0 0 100%;
+    
+}
+
+.introduction:nth-child(1) {
+    font-family: 'unbounded', cursive;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: center;
+    flex: 0 0 100%;
+}
+
+.intro-about-me {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0px;
+    gap: 11px;
+    box-sizing: border-box;
+}
+
+
+.pattern-content {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 50px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.content-frontend {
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.pattern-box-subtitle {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.pattern-fortalezas {
+    display: flex;
+    flex-direction: column;
+    max-width: 184px;
+    max-height: 163px;
+    position: relative;
+
+}
+
+.lista-fortalezas {
+    position:absolute;
+    top: 50px;
+    text-align: left;
+}
+
+.moreInfo-content {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    padding: 20px 0px;
+
+}
+
+.moreInfo-content-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 80px;
+
+}
+
+.button-moreInfo {
+    appearance: none;
+    background: none;
+    max-width: 90px;
+    max-height: 100px;;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 7px;
+
+    
+}
+
+.label-button {
+    max-width: 110px;
+}
+
+
+/* Bloques de section y article */
+
+.pattern-container {
+    max-width: 1538px;
+    max-height: 873px;
+    margin: 16px auto;
+    padding: 0px;
+    background-color: white;
+    border: 1px solid black;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.pattern-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.section-work {
+    flex: 1;
+    padding: 0px;
+    margin: 0;
+}
+
+.section-info,
+.section-moreInfo-and-Contact {
+    flex: 0 0 20%;
+    display: flex;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+.section-info,
+.section-work {
+    border-right: 1px solid black;
+}
+
+.pattern-article {
+    border-bottom: 1px solid black;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    
+}
+
+.article-basic-info {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.article-name {
+    flex-direction: row;
+    justify-content: flex-start;
+    flex: 1;
+    gap: 20px;
+    width: 370px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+}
+
+.article-cv,
+.article-socials {
+    flex: 0 0 3%;
+}
+
+.article-cv {
+    padding: 30px;
+}
+   
+
+.article-socials {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+}
+
+
+.article-intro {
+    padding: 0px;
+    padding-bottom: 22.5px;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    border: none;
+}
+
+.article-uxui,
+.article-frontend {
+    padding: 0px;
+    align-items:flex-start;
+    border: none;
+}
+
+.article-frontend {
+    justify-content: right;
+    align-items: flex-end;
+    
+}
+
+.article-moreInfo {
+    flex: 1;
+    justify-content: flex-start;
+}
+
+.article-contact {
+    box-sizing: border-box;
+    width: 100%;
+    flex: 0 0 30%;
+    padding: 0px;
+    border: none;
+
+}
+
+/* Elementos concretos */
+
+.intro-box {
+    max-width: 306px;
+    max-height: 60px;
+}
+
+[data-header] {
+    font-size: 12px;
+}
+
+[data-header]::before {
+    content: attr(data-header) ": ";
+}
+
+.pattern-title {
+    font-family: 'unbounded', cursive;
+    font-weight: 300;
+    font-size: 26px;
+    display: flex;
+}
+
+.pattern-title::before {
+    content: '['
+}
+
+.pattern-title::after {
+    content: ']'
+}
+
+.title-work {
+    border: 1px solid rgba(0, 0, 0, 1);
+    border-left: none;
+    padding: 10px 250px;
+}
+
+.text-block {
+    width: 196px;
+    height: 221px;
+    padding: 0px 20px;
+}
+
+a:hover {
+    color: rgba(232, 201, 93, 1);
+}
+
+a:visited {
+    color: rgba(211, 212, 247, 1);
+
+}
+
+.flower {
+    padding-bottom: 10px;
+}
+
+.big-flower {
+    width: 92px;
+    height: 92px;
+}
+
+.arrow-work {
+    display: flex;
+    align-self: center;
+}
+
+.reverse {
+    transform: rotate(180deg);
+}
+
+.border-except-right {
+    border-left: 1px solid black;
+    border-right: none;
+    padding: 10px 230px;
+}
+
+.border-box {
+    box-sizing: border-box;
+    max-height: 100%;
 }
