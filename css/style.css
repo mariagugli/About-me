@@ -12,6 +12,12 @@ body {
 
 }
 
+body.dark {
+    background: #0e0e0e;
+    color: white;
+}
+
+
 h1,
 h2,
 h3,
@@ -223,9 +229,8 @@ h4 {
 /* Bloques de section y article */
 
 .pattern-container {
-    max-width: 1538px;
-    max-height: 873px;
-    margin: 16px auto;
+    width: 1538px;
+    height: 873px;
     padding: 0px;
     background-color: white;
     border: 1px solid black;
