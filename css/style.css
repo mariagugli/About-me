@@ -167,15 +167,27 @@ h4 {
     text-align: left;
 }
 
-.moreInfo-content {
-    box-sizing: border-box;
+.box-title-moreInfo {
     width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.moreInfo-content {
+    width: 100%;
+    padding: 26px 28px;
+    gap: 29px;
+
+}
+
+.moreInfo-buttons {
     display: flex;
     flex-direction: column;
-    justify-content: stretch;
     align-items: center;
-    padding: 20px 0px;
-
 }
 
 .moreInfo-content-buttons {
@@ -188,19 +200,19 @@ h4 {
 
 }
 
+.buttons-1 {
+    gap: 85px;
+}
+
 .button-moreInfo {
-    appearance: none;
-    background: none;
     max-width: 90px;
     max-height: 100px;;
-    border: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px;
     gap: 7px;
 
-    
 }
 
 .label-button {
@@ -237,6 +249,7 @@ h4 {
     flex: 1;
     padding: 0px;
     margin: 0;
+    display: block;
 }
 
 .section-info,
@@ -323,6 +336,7 @@ h4 {
 .article-moreInfo {
     flex: 1;
     justify-content: flex-start;
+    padding: 0;
 }
 
 .article-contact {
@@ -412,4 +426,152 @@ a:visited {
 .border-box {
     box-sizing: border-box;
     max-height: 100%;
+}
+
+.layer-cat,
+.layer-watchlist,
+.layer-origen,
+.layer-viajes,
+.layer-fotografa,
+.layer-hobbies {
+
+    background-color: rgba(211, 212, 247, 1);
+    position:absolute;
+    top: 75.656px;
+    right: 0;
+    width: 100%;
+    height: 60.75%;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-start;
+    padding: 0px;
+
+}
+
+.pattern-layers-title-moreInfo {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    gap: 10px;
+
+    border-bottom: 1px solid #000000;
+    align-self: stretch;
+
+    position: relative;
+    
+
+}
+
+.pattern-layers-title-moreInfo h3 {
+    margin: 0;
+    
+}
+
+.x-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    align-self: stretch;
+    align-content: flex-start;
+
+    cursor: pointer;
+}
+
+.layer-hobbies p {
+    font-family: 'Unbounded';
+    font-weight: 300;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.layer-hobbies,
+.layer-fotografa,
+.layer-viajes,
+.layer-origen,
+.layer-cat,
+.layer-watchlist {
+    display: none;
+}
+
+
+.group-img {
+    overflow-y: scroll;
+    padding: 0 10px;
+    padding-bottom: 10px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.align-center {
+    display:flex;
+    align-self: center;
+}
+
+.align-end {
+    display: flex; 
+    align-self: flex-end;
+}
+
+.align-start {
+    display: flex;
+    align-self: flex-start;
+}
+
+.lists-of-elements {
+    overflow-y: scroll;
+}
+
+.title-list {
+    font-family: 'Unbounded', cursive;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.list-with-boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 5px 5px 0px 10px;
+
+    font-size: 12px;
+    font-weight: 300;
+    
+}
+
+.list-only-titles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 5px 0px 0px;
+
+}
+
+.box-hecho,
+.box-pendiente {
+    
+    display: flex;
+    justify-content: center;
+    padding: 3px 14px;
+    gap: 10px;
+
+    width: 61px;
+    height: 16px;
+    border-radius: 100px;
+    background-color: rgba(158, 237, 175, 1);
+
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.box-pendiente {
+    background-color: rgba(232, 231, 231, 1);
 }
