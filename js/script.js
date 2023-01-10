@@ -1,3 +1,15 @@
+/* Para pasar al dark-mode */
+
+let toggle = document.querySelector('.toggle-wrapper');
+let body = document.querySelector('body');
+let moon = document.querySelectorAll('.moon');
+
+toggle.onclick = function() {
+	toggle.classList.toggle('dark');
+	body.classList.toggle('dark');
+	moon.classList.toggle('dark');
+}
+
 
 /* Para abrir layer al apretar el botón correspondiente */
 
