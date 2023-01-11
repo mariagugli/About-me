@@ -46,6 +46,13 @@ btnFotografa.addEventListener('click', () => {
 	document.querySelector('.layer-fotografa').style.display = "flex";
 });
 
+const btnContactar = document.querySelector('.big-flower');
+
+btnContactar.addEventListener('click', () => {
+	document.querySelector('.formulario').style.display = "flex";
+	;
+});
+
 
 
 /* Para cerrar layers extra */
@@ -88,6 +95,13 @@ const closeLayerHobbies = document.querySelector('.close-hobbies')
 
 closeLayerHobbies.addEventListener('click', () => {
 	document.querySelector('.layer-hobbies').style.display = "none";
+});
+
+
+const closeLayerFormulario = document.querySelector('.cerrar-formulario')
+
+closeLayerFormulario.addEventListener('click', () => {
+	document.querySelector('.formulario').style.display = "none";
 });
 
 

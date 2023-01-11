@@ -455,6 +455,8 @@ a:hover {
     padding: 0px;
     gap: 30px;
 
+    display: none;
+
 }
 
 .cerrar-formulario {
@@ -533,6 +535,8 @@ a:hover {
     font-family: 'Unbounded', cursive;
     font-weight: 400;
     font-size: 14px;
+
+    cursor: pointer;
     
 }
 
@@ -689,8 +693,12 @@ body.dark .pattern-container {
     border: 1px solid white;
 }
 
-body.dark .pattern-section {
-    border: 1px solid white;
+body.dark .section-info {
+    border-right: 1px solid white;
+}
+
+body.dark .section-work {
+    border-right: 1px solid white;
 }
 
 body.dark .pattern-article {
@@ -754,5 +762,15 @@ body.dark .button-moreInfo {
 
 body.dark .layer-info {
     background-color:rgba(232, 201, 93, 1);
+    color: black;
+}
+
+body.dark .formulario {
+    background-color: rgba(232, 201, 93, 1);
+    color: black;
+}
+
+body.dark .btn-enviar {
+    background-color:rgba(211, 212, 247, 1);
     color: black;
 }
