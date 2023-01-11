@@ -8,6 +8,57 @@ toggle.onclick = function() {
 	body.classList.toggle('dark');
 }
 
+/* Al hacer click sube el contenido al inicio */
+
+const buttonUp = document.querySelector('.button-up');
+
+buttonUp.addEventListener("click", () => {
+	document.querySelector('main').scrollTop = 0;
+});
+
+/* Scroll horizontal con ratón para elementos que lo necesitan */
+
+const scrollElement1 = document.querySelector('.article-name');
+const scrollElement2 = document.querySelector('.content-uxui');
+const scrollElement3 = document.querySelector('.content-frontend');
+
+scrollElement1.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    scrollElement1.scrollLeft += evt.deltaY;
+
+});
+
+scrollElement2.addEventListener("wheel", (evt) => {
+	if (window.innerWidth > 975) {
+	  evt.preventDefault();
+	  scrollElement2.scrollLeft += evt.deltaY;
+	}
+});
+
+scrollElement1.addEventListener("wheel", (evt) => {
+	if (window.innerWidth > 975) {
+	  evt.preventDefault();
+	  scrollElement3.scrollLeft += evt.deltaY;
+	}
+});
+
+
+
+/* Para que a partir de 975px, las sections esten todas en una sola 
+
+const mainSection = document.querySelector('.section-info');
+const addedSection1 = document.querySelector('.section-work');
+const addedSection2 = document.querySelector('.section-moreInfo-and-Contact');
+
+
+function fusionSection() {
+	if (window.innerWidth < 975) {
+		mainSection.innerHTML = addedSection1 + addedSection2;
+
+	}
+}
+*/
+
 
 /* Para abrir layer al apretar el botón correspondiente */
 
@@ -50,6 +101,7 @@ const btnContactar = document.querySelector('.big-flower');
 
 btnContactar.addEventListener('click', () => {
 	document.querySelector('.formulario').style.display = "flex";
+	document.querySelector('main').scrollTop = 815;
 	;
 });
 
