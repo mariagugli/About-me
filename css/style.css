@@ -393,13 +393,17 @@ h4 {
     padding: 0px 20px;
 }
 
-a:hover {
-    color: rgba(232, 201, 93, 1);
-}
-
 a:visited {
     color: rgba(211, 212, 247, 1);
 
+}
+
+.social-link:visited {
+    color: black;
+}
+
+a:hover {
+    color: rgba(232, 201, 93, 1);
 }
 
 .flower {
@@ -607,6 +611,33 @@ body.dark .article-socials {
     border: none;
 }
 
+body.dark .article-contact {
+    border: none;
+}
+
+body.dark .article-intro {
+    border: none;
+}
+
+body.dark .article-frontend {
+    border: none;
+}
+
+body.dark .box-title-moreInfo {
+    background-color: white;
+    color:#000000;
+}
+
+body.dark .title-work {
+    border: 1px solid white;
+    border-left: none;
+}
+
+body.dark .border-except-right {
+    border: 1px solid white;
+    border-right: none;
+}
+
 body.dark .moon {
     color: whitesmoke;
 }
@@ -615,3 +646,14 @@ body.dark .sun {
     color: #d8860b;
 }
 
+body.dark .big-flower:hover {
+    color:rgba(232, 201, 93, 1);
+}
+
+body.dark .social-link:visited {
+    color: white;
+}
+
+body.dark .button-moreInfo {
+    color: white;
+}
