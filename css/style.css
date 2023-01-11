@@ -441,12 +441,7 @@ a:hover {
     max-height: 100%;
 }
 
-.layer-cat,
-.layer-watchlist,
-.layer-origen,
-.layer-viajes,
-.layer-fotografa,
-.layer-hobbies {
+.layer-info {
 
     background-color: rgba(211, 212, 247, 1);
     position:absolute;
@@ -656,4 +651,9 @@ body.dark .social-link:visited {
 
 body.dark .button-moreInfo {
     color: white;
+}
+
+body.dark .layer-info {
+    background-color:rgba(232, 201, 93, 1);
+    color: black;
 }
