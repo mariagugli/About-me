@@ -203,6 +203,7 @@ h4 {
 }
 
 .button-moreInfo {
+    appearance: none;
     background: none;
     border: none;
     max-width: 90px;
@@ -221,6 +222,10 @@ h4 {
     max-width: 110px;
 }
 
+button {
+    appearance: none;
+
+}
 
 /* Bloques de section y article */
 
@@ -935,6 +940,7 @@ body.dark .button-up {
 
     .button-up {
         display: flex;
+        
     }
 
 
