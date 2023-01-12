@@ -19,15 +19,15 @@ buttonUp.addEventListener("click", () => {
 /* Scroll horizontal con ratón para elementos que lo necesitan */
 
 const scrollElement1 = document.querySelector('.article-name');
-const scrollElement2 = document.querySelector('.content-uxui');
-const scrollElement3 = document.querySelector('.content-frontend');
+/*const scrollElement2 = document.querySelector('.content-uxui');
+const scrollElement3 = document.querySelector('.content-frontend');*/
 
 scrollElement1.addEventListener("wheel", (evt) => {
     evt.preventDefault();
     scrollElement1.scrollLeft += evt.deltaY;
 
 });
-
+/*
 scrollElement2.addEventListener("wheel", (evt) => {
 	if (window.innerWidth > 975) {
 	  evt.preventDefault();
@@ -41,22 +41,6 @@ scrollElement1.addEventListener("wheel", (evt) => {
 	  scrollElement3.scrollLeft += evt.deltaY;
 	}
 });
-
-
-
-/* Para que a partir de 975px, las sections esten todas en una sola 
-
-const mainSection = document.querySelector('.section-info');
-const addedSection1 = document.querySelector('.section-work');
-const addedSection2 = document.querySelector('.section-moreInfo-and-Contact');
-
-
-function fusionSection() {
-	if (window.innerWidth < 975) {
-		mainSection.innerHTML = addedSection1 + addedSection2;
-
-	}
-}
 */
 
 

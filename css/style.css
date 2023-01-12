@@ -225,16 +225,14 @@ h4 {
 /* Bloques de section y article */
 
 .pattern-container {
-    width: 1538px;
-    height: 815px;
+    width: 80vw;
+    height: 90vh;
     padding: 0px;
     
-    border: 1px solid black;
     position: relative;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
 
 }
 
@@ -242,29 +240,23 @@ h4 {
     position: relative;
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
-    width: 100%;
-    height: 100%;
 }
 
 .section-work {
     flex: 1;
     padding: 0px;
     margin: 0;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
 }
 
 .section-info,
 .section-moreInfo-and-Contact {
-    flex: 0 0 20%;
-    display: flex;
-    flex-direction: column;
-    align-self: stretch;
+    flex: 0 0 30%;
+    align-items: stretch;
+    border: 1px solid black;
 }
 
-.section-info,
-.section-work {
-    border-right: 1px solid black;
-}
 
 .pattern-article {
     border-bottom: 1px solid black;
@@ -817,101 +809,11 @@ body.dark .button-up {
 /* Media query */
 
 @media screen and (max-width: 1290px) {
-    
-    .pattern-container {
-        width: 1160px;
-    }
-
-    .section-moreInfo-and-Contact,
-    .section-info {
-        flex: 0 0 40%;
-        
-    }
-
-    .section-info {
-        align-items: flex-end;
-    }
-
-    .article-basic-info,
-    .article-name, 
-    .article-cv,
-    .article-socials {
-        width: 57.5%;
-    }
-
-    .article-contact {
-        width: 48.4%;
-    }
-
-    .article-moreInfo {
-        height: 569px;
-        width: 48.4%;
-    }
-
-    .box-title-moreInfo h2 {
-        font-size: 20px;
-    }
-
-    .moreInfo-content {
-        overflow: auto;
-    }
-
-    .moreInfo-content-buttons {
-        flex-direction: column;
-        gap: 10px;
-    
-    }
 
     .title-work {
         align-self: stretch;
         border-right: none;
         border-left: none;
-    }
-
-    .pattern-content {
-        gap: 30px;
-    }
-
-    .layer-info {
-        position:absolute;
-        top: 58.2px;
-        left: 0;
-        height: 62.75%;
-        width: 48.4%;
-    }
-
-    .title-list {
-        padding-inline-start: 10px;
-    }
-
-    .list-only-titles {
-        overflow: hidden;
-    }
-
-    .layer-info .pattern-title {
-        font-size: 20px;
-    } 
-
-    .group-img img {
-        width: 100%;
-        height: 100%;
-    }
-
-    .formulario {
-        align-items: flex-start;
-        gap: 20px;
-    }
-
-    .inputs-formulario {
-        padding: 30px;
-    }
-
-    .inputs-formulario input {
-        width: 520px;
-    }
-
-    .btn-enviar {
-        align-self: center;
     }
 
 
@@ -922,42 +824,48 @@ body.dark .button-up {
     .pattern-container {
         flex-direction: column;
         justify-content: flex-start;
-        align-items: center;
-        width: 350px;
-        height: 730px;
         overflow-y: scroll;
-        overflow-x: hidden;
+        border: 1px solid black;
     }
 
     .pattern-section {
-        flex: none;
         border: none; 
 
     }
 
     .article-name {
-        flex: 0 0 80.55%;
-    }
-
-    .pattern-article {
+        padding-top: 192px;
+        padding-bottom: 79px;
         width: 100%;
     }
+
+    
 
     .article-basic-info,
     .article-socials {
         position: fixed;
-        width: 350px;
+        background-color: white;
+        z-index: 10000;
+        width: 80vw;
+    }
+
+    body.dark .article-basic-info {
+        background-color: rgba(46, 46, 46, 1);
+    }
+
+    body.dark .article-socials {
+        background-color: rgba(46, 46, 46, 1);
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
     }
 
     .article-socials {
         height: 60px;
-        bottom: 97px;
-        
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    
     }
 
-    .article-intro {
-        padding: 0;
-    }
 
     .article-intro h2 {
         font-size: 20px;
@@ -978,14 +886,9 @@ body.dark .button-up {
 
     .pattern-content {
         overflow: scroll;
-        width: auto;
-    }
-
-    .content-frontend {
-        justify-content: flex-end;
-        align-items: center;
-        overflow-x: scroll;
-        overflow-y: hidden;
+        width: 256px;
+        height: 273px;
+        flex-direction: column;
     }
 
     .box-title-moreInfo h2 {
@@ -1008,7 +911,7 @@ body.dark .button-up {
     .layer-info {
         top: 75.4px;
         left: 0;
-        height: 60.6%;
+        height: 62.4%;
         width: 100%;
     }
 
@@ -1023,6 +926,11 @@ body.dark .button-up {
 
     .inputs-formulario input {
         width: 280px;
+    }
+
+    .group-img img {
+        width: 100%;
+        height: 100%;
     }
 
     .button-up {
