@@ -826,6 +826,11 @@ body.dark .button-up {
 
 @media screen and (max-width: 975px) {
     
+    body {
+        overflow: hidden;
+    }
+
+
     .pattern-container {
         flex-direction: column;
         justify-content: flex-start;
