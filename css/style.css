@@ -696,6 +696,20 @@ a:hover {
     background-color: rgba(232, 231, 231, 1);
 }
 
+.layer-cat-content {
+    margin: 20px;
+    padding-top: 40px;
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.layer-cat-content img {
+    border-radius: 12px;
+}
+
 /* Para cambiar a dark mode */
 
 .toggle-wrapper.dark .darkmode-toggle {
@@ -800,7 +814,7 @@ body.dark .button-up {
     border: 1px solid white;
 }
 
-/* Media  */
+/* Media query */
 
 @media screen and (max-width: 1290px) {
     
@@ -910,6 +924,7 @@ body.dark .button-up {
         justify-content: flex-start;
         align-items: center;
         width: 350px;
+        height: 730px;
         overflow-y: scroll;
         overflow-x: hidden;
     }
@@ -936,7 +951,7 @@ body.dark .button-up {
 
     .article-socials {
         height: 60px;
-        bottom: 64px;
+        bottom: 97px;
         
     }
 
