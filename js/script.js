@@ -16,32 +16,7 @@ buttonUp.addEventListener("click", () => {
 	document.querySelector('main').scrollTop = 0;
 });
 
-/* Scroll horizontal con ratón para elementos que lo necesitan */
 
-const scrollElement1 = document.querySelector('.article-name');
-/*const scrollElement2 = document.querySelector('.content-uxui');
-const scrollElement3 = document.querySelector('.content-frontend');*/
-
-scrollElement1.addEventListener("wheel", (evt) => {
-    evt.preventDefault();
-    scrollElement1.scrollLeft += evt.deltaY;
-
-});
-/*
-scrollElement2.addEventListener("wheel", (evt) => {
-	if (window.innerWidth > 975) {
-	  evt.preventDefault();
-	  scrollElement2.scrollLeft += evt.deltaY;
-	}
-});
-
-scrollElement1.addEventListener("wheel", (evt) => {
-	if (window.innerWidth > 975) {
-	  evt.preventDefault();
-	  scrollElement3.scrollLeft += evt.deltaY;
-	}
-});
-*/
 
 
 /* Para abrir layer al apretar el botón correspondiente */

@@ -4,7 +4,7 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    
     position: relative;
     align-items: center;
     justify-content: center;
@@ -99,7 +99,8 @@ h4 {
     justify-content: center;
     align-items: center;
     scroll-snap-align: center;
-    flex: 0 0 100%;
+    flex: 0 0 auto;
+    width: 100%;
     
 }
 
@@ -131,9 +132,7 @@ h4 {
 .pattern-content {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
     gap: 12px;
-    box-sizing: border-box;
     width: 100%;
 }
 
@@ -225,6 +224,7 @@ h4 {
 
 button {
     appearance: none;
+    color: black;
 
 }
 
@@ -232,7 +232,7 @@ button {
 
 .pattern-container {
     width: 80vw;
-    height: 80vh;
+    height: 90vh;
     padding: 0px;
     
     position: relative;
@@ -249,17 +249,16 @@ button {
 }
 
 .section-work {
-    flex: 1;
     padding: 0px;
     margin: 0;
     border-bottom: 1px solid black;
     border-top: 1px solid black;
+    width: 50%;
 }
 
 .section-info,
 .section-moreInfo-and-Contact {
-    flex: 0 0 30%;
-    align-items: stretch;
+    width: 30%;
     border: 1px solid black;
 }
 
@@ -271,7 +270,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: auto;
+   
     
 }
 
@@ -286,9 +285,7 @@ button {
     justify-content: flex-start;
     flex: 1;
     gap: 20px;
-    width: 413px;
-    overflow-x: scroll;
-    overflow-y: hidden;
+    overflow-x: auto;
     scroll-snap-type: x mandatory;
 }
 
@@ -316,6 +313,7 @@ button {
     align-content: center;
     align-items: center;
     border: none;
+    margin-bottom: 23px;
 }
 
 .article-uxui,
@@ -385,7 +383,6 @@ button {
     border-left: none;
     padding: 10px 75px;
     margin: 0;
-    margin-top: 23px;
 }
 
 .text-block {
@@ -446,17 +443,14 @@ a:hover {
     background: none;
     border: 1px solid black;
     border-radius: 100px;
-    position: static;
+    
     align-self: flex-end;
     margin-right: 50px;
-
+    margin-bottom: 10px;
     display: none;
     justify-content: center;
     align-items: center;
-    width: 87px;
-    height: 37px;
-    padding: 14px 7px;
-    gap: 10px;
+    padding: 10px 25px;
 
 }
 
@@ -464,9 +458,8 @@ a:hover {
     background-color: rgba(211, 212, 247, 1);
     position:absolute;
     top: 119.156px;
-    right: 0;
     width: 100%;
-    height: 85.4%;
+    height: 84.4%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -508,17 +501,14 @@ a:hover {
 .inputs-formulario {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     padding: 0;
     gap: 5px;
+    width: 80%;
 
 }
 
 .inputs-formulario input {
-    height: 40px;
-    width: 620px;
-    left: 85px;
-    top: 40px;
+    width: 100%;
     border: none;
     border-radius: 8px;
     padding: 12px;
@@ -566,7 +556,7 @@ a:hover {
     top: 75.656px;
     right: 0;
     width: 100%;
-    height: 60.6%;
+    height: 59.95%;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
@@ -709,6 +699,33 @@ a:hover {
     border-radius: 12px;
 }
 
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+}   
+::-webkit-scrollbar-track {
+    background-color: rgb(40, 39, 39);
+
+}
+::-webkit-scrollbar-thumb {
+    background-color:rgba(255, 255, 255, 0.8);
+    border-radius: 100px;
+}
+
+.watchlist-list::-webkit-scrollbar-track,
+.lists-of-elements::-webkit-scrollbar-track,
+.group-img::-webkit-scrollbar-track {
+    background:rgba(232, 201, 93, 1);
+}
+
+.watchlist-list::-webkit-scrollbar-thumb,
+.lists-of-elements::-webkit-scrollbar-thumb,
+.group-img::-webkit-scrollbar-thumb {
+    background:rgba(255, 255, 255, 0.6);
+}
+
 /* Para cambiar a dark mode */
 
 .toggle-wrapper.dark .darkmode-toggle {
@@ -816,35 +833,46 @@ body.dark .button-up {
 
 /* Media query */
 
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 1344px) {
 
-    .title-work {
-        align-self: stretch;
-        border-right: none;
-        border-left: none;
+    .pattern-container {
+        width: 90vw;
+        height: 95vh;
     }
-
-
 }
 
-@media screen and (max-width: 975px) {
+@media screen and (max-width: 1100px) {
     
     body {
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
 
     .pattern-container {
+        width: 80vw;
+        height: 90vh;
         flex-direction: column;
         justify-content: flex-start;
         overflow-y: scroll;
         border: 1px solid black;
     }
 
+    .pattern-container::-webkit-scrollbar {
+        width: 0;
+    }
+
     .pattern-section {
         border: none; 
+        width: 100%;
+        height: 100%;
 
     }
+
+
 
     .article-name {
         padding-top: 192px;
