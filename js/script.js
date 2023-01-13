@@ -59,7 +59,7 @@ const btnContactar = document.querySelector('.big-flower');
 
 btnContactar.addEventListener('click', () => {
 	document.querySelector('.formulario').style.display = "flex";
-	document.querySelector('main').scrollTop = 707;
+	document.querySelector('main').scrollTop = 645;
 	;
 });
 
