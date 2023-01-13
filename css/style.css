@@ -849,6 +849,7 @@ body.dark .button-up {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        min-height: -webkit-fill-available;
     }
 
 
