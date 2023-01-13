@@ -1,3 +1,4 @@
+
 /* Para pasar al dark-mode */
 
 let toggle = document.querySelector('.toggle-wrapper');
@@ -15,8 +16,6 @@ const buttonUp = document.querySelector('.button-up');
 buttonUp.addEventListener("click", () => {
 	document.querySelector('main').scrollTop = 0;
 });
-
-
 
 
 /* Para abrir layer al apretar el botón correspondiente */
@@ -60,7 +59,7 @@ const btnContactar = document.querySelector('.big-flower');
 
 btnContactar.addEventListener('click', () => {
 	document.querySelector('.formulario').style.display = "flex";
-	document.querySelector('main').scrollTop = 815;
+	document.querySelector('main').scrollTop = 707;
 	;
 });
 
