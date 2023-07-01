@@ -710,14 +710,26 @@ a:hover {
     gap: 15px;
 }
 
+.text-intro-origen,
+.text-origen {
+    font-family: 'Unbounded', cursive;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: left;
+    margin: 0;
+
+}
+
+.text-origen {
+    font-size: 12px;
+}
+
 .box-50 {
     width: 100%;
     display: flex;
     align-items: center;
-    text-justify: center;
+    justify-content: center;
 }
-
-
 
 .origin-sub-box {
     display: flex;
@@ -740,19 +752,7 @@ a:hover {
     align-items: center;
 }
 
-.text-intro-origen,
-.text-origen {
-    font-family: 'Unbounded', cursive;
-    font-weight: 300;
-    font-size: 20px;
-    text-align: left;
-    margin: 0;
 
-}
-
-.text-origen {
-    font-size: 12px;
-}
 
 .text-center {
     text-align: center;
