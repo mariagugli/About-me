@@ -14,7 +14,6 @@ body {
 
 }
 
-
 h1,
 h2,
 h3,
@@ -969,6 +968,10 @@ body.dark .watchlist-list::-webkit-scrollbar-thumb {
     background-color:rgba(255, 255, 255, 0.8);
 }
 
+body.dark a {
+    color: white;
+}
+
 /* Media query */
 
 @media screen and (max-width: 1344px) {
@@ -995,7 +998,6 @@ body.dark .watchlist-list::-webkit-scrollbar-thumb {
         min-height: -webkit-fill-available;
         
     }
-
 
     .pattern-container {
         width: 80vw;
@@ -1040,7 +1042,6 @@ body.dark .watchlist-list::-webkit-scrollbar-thumb {
         border-top: 1px solid white;
     }
 
-    
     .article-name {
         padding-top: 192px;
         padding-bottom: 79px;
@@ -1063,9 +1064,6 @@ body.dark .watchlist-list::-webkit-scrollbar-thumb {
 
     
     }
-
-   
-
 
     .lista-fortalezas {
         padding-bottom: 20px;
@@ -1136,11 +1134,6 @@ body.dark .watchlist-list::-webkit-scrollbar-thumb {
         display: flex;
         color: white;
     }
-
-    body.dark a {
-        color: white;
-    }
-
 
 }
 
