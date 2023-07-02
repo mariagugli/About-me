@@ -137,7 +137,7 @@ h4 {
     display: flex;
     flex-direction: row;
     gap: 12px;
-    width: 50%;
+    width: 100%;
 }
 
 .content-frontend {
@@ -151,14 +151,15 @@ h4 {
     flex-direction: row;
     align-items: baseline;
     gap: 15px;
+    width: 100%;
 }
 
 .pattern-fortalezas {
     display: flex;
     flex-direction: column;
-    padding: 0 20px;
+    padding: 0 20px 0 0;
     position: relative;
-
+    width: fit-content;
 }
 
 .lista-fortalezas {
@@ -176,7 +177,7 @@ h4 {
 }
 
 .moreInfo-content {
-    width: 100%;
+    width: calc(100% - 56px);
     padding: 26px 28px;
     gap: 29px;
 
@@ -317,17 +318,15 @@ button {
 
 .article-uxui,
 .article-frontend {
-    padding: 0px;
-    align-items:flex-start;
+    padding: 0;
+    align-items: flex-start;
     border: none;
+    width: 100%;
 }
-
 .article-frontend {
     justify-content: right;
     align-items: flex-end;
-    
 }
-
 .article-moreInfo {
     flex: 1;
     justify-content: flex-start;
@@ -381,8 +380,6 @@ button {
 }
 
 .text-block {
-    min-width: 60%;
-    min-height: auto;
     padding: 0px 20px;
 }
 
@@ -780,10 +777,6 @@ a {
     color: black;
 }
 
-.border-box {
-    box-sizing: border-box;
-}
-
 /* Tamaño img y svgs */
 .size-smaller {
     width:10%;
@@ -994,14 +987,15 @@ body.dark a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: auto;
+        height: 100svh;
         min-height: -webkit-fill-available;
         
     }
 
     .pattern-container {
-        width: 80vw;
-        height: 80vh;
+        width: calc(100vw - 150px);
+        height: calc(100svh - 150px);
+        margin: 75px 150px;
         flex-direction: column;
         justify-content: flex-start;
         overflow-y: scroll;
@@ -1015,14 +1009,13 @@ body.dark a {
     .pattern-section {
         border: none; 
         width: 100%;
-
     }
 
     .article-basic-info {
         position: fixed;
         background-color: white;
-        z-index: 10000;
-        width: 80vw;
+        z-index: 3;
+        width: calc(100% - 180px);
     }
 
     body.dark .article-basic-info {
@@ -1045,7 +1038,7 @@ body.dark a {
     .article-name {
         padding-top: 192px;
         padding-bottom: 79px;
-        width: 100%;
+        width: calc(100% - 30px);
     }
 
     .intro-about-me img {
@@ -1061,8 +1054,6 @@ body.dark a {
         overflow-x: auto;
         gap: 36px;
         width: 100%;
-
-    
     }
 
     .lista-fortalezas {
